@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Metro 2035</title>
+ 
+  <link rel="stylesheet" href="css/grid.css" />
+  <link rel="stylesheet" href="css/style2.css" />
+  <script type="javascript/text">
+  
+ var prevItem = null;
+function activateItem(t){
+   if(prevItem != null){
+      prevItem.className = prevItem.className.replace(/{\b}?n/, "");
+   }
+   t.className += "n";
+   prevItem = t;
+}
+</script>
+</head>
+
+<body class="gallery">
+  <header class="site-header">
+    <div class="main grid">
+	  <div class="logo"><a href="homepage.html"><img class="logo" src="images/met.jpg"/></a>
+      </div>
+      <label for="menuCheckbox" class="menuToggle">Menu</label>
+      <input type="checkbox" id="menuCheckbox">
+      <nav class="main-navigation">
+        <ul id="bg">
+          <li><a class="anchor" href="news.html">News</a></li>
+          <li><a class="anchor" href="features.html">Features</a></li>
+          <li><a class="anchor" href="devblog.html">Dev blog</a></li>
+          <li><a class="anchor" href="store.html">Store</a></li>
+		  <li><a class="active anchor" href="gallery.html">Gallery</a></li>
+          <li><a class="anchor" href="support.html">Support us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="newsdivs1 grid">
+	<div id="gallery">	
+		<div class="heading">
+		<h1>Gallery</h1>
+	</div>	
+		<div id="bigimages">
+
+			<div id="n1" class="n" onClick="activateItem(this)">
+				<img src="images/img1.jpg" alt=""/>
+			</div>
+			<div id="n2" class="n">
+				<img src="images/img2.jpg" alt=""/>
+			</div>
+			<div id="n3" class="n">
+				<img src="images/img3.jpg" alt=""/>
+			</div>
+			<div id="n4" class="n">
+				<img src="images/img4.jpg" alt=""/>
+			</div>
+			<div id="n5" class="n">
+				<img src="images/img5.jpg" alt=""/>
+			</div>		
+			<div id="n6" class="n">
+				<img src="images/img6.jpg" alt=""/>
+			</div>			
+			<div id="n7" class="n">
+				<img src="images/img7.jpg" alt=""/>
+			</div>			
+			<div id="n8" class="n">
+				<img src="images/img8.jpg" alt=""/>
+			</div>
+			
+			<div id="n9" class="n">
+				<img src="images/img9.jpg" alt=""/>
+			</div>			
+			<div id="n10" class="n">
+				<img src="images/img10.jpg" alt=""/>
+			</div>
+			<div class="end"></div>
+		</div>
+		
+			<div id="thumbs">
+				<a href="javascript: changeImage(1);"><img src="images/img1.jpg" alt="" /></a>
+				<a href="javascript: changeImage(2);"><img src="images/img2.jpg" alt="" /></a>
+				<a href="javascript: changeImage(3);"><img src="images/img3.jpg" alt="" /></a>
+				<a href="javascript: changeImage(4);"><img src="images/img4.jpg" alt="" /></a>
+				<a href="javascript: changeImage(5);"><img src="images/img5.jpg" alt="" /></a>
+				<a href="javascript: changeImage(6);"><img src="images/img6.jpg" alt="" /></a>
+				<a href="javascript: changeImage(7);"><img src="images/img7.jpg" alt="" /></a>
+				<a href="javascript: changeImage(8);"><img src="images/img8.jpg" alt="" /></a>
+				<a href="javascript: changeImage(9);"><img src="images/img9.jpg" alt="" /></a>
+				<a href="javascript: changeImage(10);"><img src="images/img10.jpg" alt="" /></a>
+			</div>
+	</div>
+	<div class="end"></div>
+</div>
+
+		<div class="section" id="section3">				
+			<div class="grid footer">	
+				<div class="c3">
+					<a href="#"><img id="icons" src="images/Facebook55.png"/>
+					<p> Facebook </br> Give us a like! </br> Tell your friends</p></a>
+				</div>
+				
+				<div class="c3">
+					<a href="#"><img id="icons" src="images/google116.png"/>
+					<p> Google plus </br> Connect with us, stay in touch</p></a>
+				</div>
+				
+				<div class="c3">
+					<a href="#"><img id="icons" src="images/Twitter1.png"/>	
+					<p>  Twitter </br> See what we post, be the first to see it</p></a>
+				</div>
+				
+				<div class="grid c3">
+					<a href="#"><img id="icons" src="images/youtube18.png"/>
+					<p> Youtube </br> Stay up to date with our latest content </p></a>
+				</div>
+					<ul id="ft2">
+						<li><a  href="#">Legal information</a></li>
+						<li><a  href="#">Help</a></li>
+						<li><a  href="#">Contact</a></li>
+					</ul>				
+				<div class="grid" id="disclaimer">
+					<p>&copy; 2015 Filip Šotola. All rights reserved. The site is not affiliated with Metro 2033 and Metro Last Light.</p>
+					<p>Trademarks belong to their respective owners, unless credited, no further brand or trademark has been used.</p>
+				</div>
+			</div>
+		</div>
+		
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/fadeinout.js"></script>
+<script src="js/gallery.js"></script>
+</body>
+</html>
